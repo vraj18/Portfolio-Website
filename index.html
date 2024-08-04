@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Portfolio Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gradient-to-b from-blue-500 to-blue-800 text-white">
+    <!-- Sticky container for navbar and profile image -->
+    <div class="sticky top-0 z-50">
+        <!-- Navigation menu -->
+        <nav class="bg-gray-700 py-2 fixed w-full top-0 left-0 z-50 h-20">
+            <div class="container flex justify-between items-center my-5">
+                <div class="text-xl font-bold ml-40">
+                      Vraj's Portfolio
+                  </div>
+                <div class="flex space-x-4">
+                    <a class="hover:bg-gray-800 text-white px-4 py-2 
+                              no-underline transition duration-100 
+                              bg-transparent hover:bg-gray-700"
+                        href="#about">About</a>
+                    <a class="hover:bg-gray-800 text-white px-4 py-2 
+                              no-underline transition duration-100 
+                              bg-transparent hover:bg-gray-700"
+                        href="#projects">Projects</a>
+                    <a class="hover:bg-gray-800 text-white px-4 py-2 
+                              no-underline transition duration-100 
+                              bg-transparent hover:bg-gray-700"
+                        href="#skills">Skills</a>
+                    <a class="hover:bg-gray-800 text-white px-4 py-2 
+                              no-underline transition duration-100 
+                              bg-transparent hover:bg-gray-700"
+                        href="#contact">Contact</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Profile image -->
+        <div class="relative">
+            <div class="w-36 h-36 rounded-full bg-white absolute top-0 
+                        left-1/2 transform -translate-x-1/2 z-50">
+                <img alt="imageofProfile" 
+                     class="w-36 h-36 rounded-full border-4 border-blue-100"
+                     src="image.jpeg" />
+            </div>
+        </div> <!-- White circle for profile image -->
+    </div>
+
+    <!-- Main content -->
+    <div class="mb-16 container mx-auto pt-20">
+        <!-- About section -->
+        <section id="about"
+            class="m-20 justi-center text-center mt-20 relative 
+                   my-5 mb-16 px-4 py-4 rounded-lg shadow-md relative 
+                   overflow-hidden bg-gradient-to-b from-gray-600 to-gray-800">
+            <h2 class="text-2xl font-bold mb-4 text-center">
+                  About Me
+              </h2>
+            <p class="text-base">
+                Welcome to my portfolio! I'm Vraj, a dedicated Computer Science and Engineering student from VNIT Nagpur. As a tech enthusiast, I am passionate about learning new technologies and tackling real-world problems. With experience in web development, computer graphics, and various frameworks, I strive to create innovative solutions. Beyond my technical pursuits, I am also an avid sports person, balancing my love for technology with a commitment to staying active and healthy. Explore my projects and discover how I blend creativity and technical expertise to make a meaningful impact.
+              </p>
+            <a href="Resume.pdf" 
+                class="inline-block mt-5 px-4 py-2 rounded-md bg-green-500 
+                       text-white hover:bg-blue-600 transition duration-300">
+                  My Resume
+              </a>
+        </section>
+
+        <!-- Projects section -->
+        <section id="projects"
+            class="m-20 rounded mb-16 bg-gradient-to-b from-gray-600 
+                   to-gray-800 text-white mb-8 px-4 py-10">
+            <h2 class="text-4xl font-bold mb-10 text-center">
+                  Projects
+              </h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+
+                <!-- Project  -->
+                <div
+                    class="bg-gray-800 p-4 shadow rounded overflow-hidden 
+                           transition-transform duration-300 transform 
+                           scale-100 hover:scale-110">
+                    <img src="amazon.webp"
+                        alt="Travel Website" class="w-full h-auto">
+                    <h3 class="font-bold mt-4">Amazon Clone</h3>
+                    <p class="text-sm leading-relaxed">
+                        I created an Amazon clone using HTML and CSS, replicating the site's visual layout and user interface. The homepage features a responsive header, search bar, navigation links, and a dynamic carousel for featured products. Product categories are displayed in organized grids with images, names, ratings, and prices. The footer includes essential links. The design is fully responsive, ensuring a consistent user experience across all devices. This project showcases my skills in HTML and CSS, demonstrating my ability to build a functional and visually appealing e-commerce site.
+                      </p>
+                </div>
+                <div
+                    class="bg-gray-800 p-4 shadow rounded overflow-hidden 
+                           transition-transform duration-300 transform 
+                           scale-100 hover:scale-110">
+                    <img src="netflix.png"
+                        alt="Travel Website" class="project-image">
+                    <h3 class="font-bold mt-4">Netflix Clone</h3>
+                    <p class="text-sm leading-relaxed">
+                        I created a Netflix clone using HTML and CSS, mirroring the site's visual layout and user interface. The homepage features a responsive header with the Netflix logo, search bar, and user profile. Below, a dynamic carousel displays featured shows and movies. Content categories are presented in organized rows with cover images and titles. The design is fully responsive, ensuring a seamless experience across all devices. This project demonstrates my proficiency in HTML and CSS, showcasing my ability to build a functional and visually appealing streaming service interface.
+                    </p>
+                </div>
+                
+                <div
+                    class="bg-gray-800 p-4 shadow rounded overflow-hidden 
+                           transition-transform duration-300 transform 
+                           scale-100 hover:scale-110">
+                    <img src="ttt.png"
+                        alt="Travel Website" class="project-image">
+                    <h3 class="font-bold mt-4"><Table>Tic Tac Toe Game</Table></h3>
+                    <p class="text-sm leading-relaxed">
+                        I developed a classic Tic-Tac-Toe game using HTML, CSS, and JavaScript, offering an engaging and intuitive user experience. The game features a sleek and responsive design, ensuring seamless play on both desktop and mobile devices. Players can easily click on the grid to make their moves, with real-time updates and visual cues enhancing the interactivity. This project highlights my front-end development skills, demonstrating my ability to create clean, functional, and dynamic web applications.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills section -->
+        <section id="skills"
+            class="m-20 p-10 mb-16 rounded-lg shadow-md text-white relative 
+                   overflow-hidden rounded mb-16 bg-gradient-to-b 
+                   from-gray-600 to-gray-800 text-white mb-8 px-4 py-10">
+            <h2 class="text-2xl font-bold mb-4">Skills</h2>
+            <!-- Skill progress bars -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                    <p class="font-bold">HTML</p>
+                    <div class="bg-gray-600 h-4 w-full rounded-full">
+                        <div class="bg-green-400 h-full rounded-full w-4/5"></div>
+                    </div>
+                </div>
+                <div>
+                    <p class="font-bold">CSS</p>
+                    <div class="bg-gray-600 h-4 w-full rounded-full">
+                        <div class="bg-green-400 h-full rounded-full w-4/5"></div>
+                    </div>
+                </div>
+                <div>
+                    <p class="font-bold">JavaScript</p>
+                    <div class="bg-gray-600 h-4 w-full rounded-full">
+                        <div class="bg-green-400 h-full rounded-full w-3/5"></div>
+                    </div>
+                </div>
+                <div>
+                    <p class="font-bold">React.js</p>
+                    <div class="bg-gray-600 h-4 w-full rounded-full">
+                        <div class="bg-green-400 h-full rounded-full w-2/5">
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <p class="font-bold">Node.js</p>
+                    <div class="bg-gray-600 h-4 w-full rounded-full">
+                        <div class="bg-green-400 h-full rounded-full w-2/5"></div>
+                    </div>
+                </div>
+                <div>
+                    <p class="font-bold">Git</p>
+                    <div class="bg-gray-600 h-4 w-full rounded-full">
+                        <div class="bg-green-400 h-full rounded-full" 
+                             style="width: 35%;"></div>
+                    </div>
+                </div>
+                <div>
+                    <p class="font-bold">Python</p>
+                    <div class="bg-gray-600 h-4 w-full rounded-full">
+                        <div class="bg-green-400 h-full rounded-full" 
+                             style="width: 75%;"></div>
+                    </div>
+                </div>
+                <div>
+                    <p class="font-bold">C/C++</p>
+                    <div class="bg-gray-600 h-4 w-full rounded-full">
+                        <div class="bg-green-400 h-full rounded-full" 
+                             style="width: 60%;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact section -->
+        <section id="contact"
+            class="m-20 p-10 rounded-lg shadow-md text-white relative 
+                   overflow-hidden rounded mb-16 bg-gradient-to-b 
+                   from-gray-600 to-gray-800 flex">
+            <div class="w-1/2">
+                <h2 class="mb-20 text-2xl leading-6 font-bold mb-4">
+                      Contact Me
+                  </h2>
+                <!-- Contact details -->
+                <p>Personal Email: vrajborad18@gmail.com</p>
+                <p>Professional Email: bt23cse119@students.vnit.ac.in</p>
+                <p>Phone: +91 9328814296</p>
+
+                <!-- Social media links -->
+                <div class="flex items-center space-x-4 mt-5">
+                    <!-- LinkedIn -->
+                    <a href="https://www.linkedin.com/in/vraj-borad/"
+                        class="inline-block px-4 py-2 rounded-md bg-green-500 
+                               text-white hover:bg-blue-600 transition duration-300">
+                      LinkedIn</a>
+                    <!-- GitHub -->
+                    <a href="https://github.com/vraj18"
+                        class="inline-block px-4 py-2 rounded-md bg-green-500 
+                               text-white hover:bg-blue-600 transition duration-300">
+                      GitHub</a>
+                </div>
+            </div>
+            <div class="w-1/2">
+                <!-- Image section -->
+                <img 
+                    src="image.jpeg" 
+                    alt="Your Image"
+                    class="w-72 h-72 mx-auto">
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
